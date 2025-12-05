@@ -331,19 +331,15 @@ def problemfive():
     
     title = input("Enter title (optional): ").strip()
     
-    # Demonstrate different ways to call the function
+    # Demuestre diferentes formas de llamar a la función
     if title:
-        # Using named arguments
-        message1 = greet(name=name, title=title)
-        # Using positional arguments
-        message2 = greet(name, title)
+        # Uso de argumentos con nombre
+        message = greet(name=name, title=title)
     else:
-        # Using only required argument
-        message1 = greet(name)
-        message2 = greet(name=name)
+        # Usando solo el argumento requerido
+        message = greet(name)
     
-    print(f"Greeting: {message1}")
-    print(f"Alternative call: {message2}")
+    print(f"Greeting: {message}")
 
 
 # PROBLEM 6: Factorial function (iterative or recursive)
